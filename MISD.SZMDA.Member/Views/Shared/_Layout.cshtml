@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" href="~/Images/SZ.png">
+    <link href="~/Content/base.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/center.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/login.css" rel="stylesheet" type="text/css">
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+</head>
+<body>
+    <!--头部部分-->
+    <div class="Top">
+        <div class="TopHead">
+            <div class="THWide">
+                <span>协会宗旨：</span>
+                <span>服务</span>
+                <span>协调</span>
+                <span>自律</span>
+                <span>维权</span>
+                <span>管理</span>
+            </div>
+        </div>
+        <div class="TopContent clearfix">
+            <div class="TopLeft">
+                <img src="~/Images/logo.png" title="深圳市医师协会">
+            </div>
+            <div class="TopRight">
+                @*<div>
+                        <p><span>您好，12345678900，欢迎来到会员中心！</span><a href="#" title="退出">[ 退出 ]</a></p>
+                        <p><a href="#" title="返回协会首页" class="TopRightA">返回协会首页</a></p>
+                    </div>*@
+                <div class="TRSpan">
+                    <span><a href="#" title="返回首页">返回首页</a></span>
+                    <span>|</span>
+                    <span><a href="#" title="用户注册">会员注册</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--头部部分结束-->
+    <!--中间部分-->
+    @RenderBody()
+    <!--中间部分结束-->
+    <!--底部部分-->
+    <div class="Footer">
+        <ul class="clearfix">
+            <li><span>深圳市医师协会</span><span>版权所有</span><span><a href="http://www.1pluse.com/" title="医+E平台">医+E</a></span></li>
+            <li><span>深圳市罗湖区解放西路3019号时珍大厦16楼 </span><span>电话：82125476</span><span>传真：88297768</span></li>
+            <li><span>粤ICP备12065709号</span></li>
+        </ul>
+    </div>
+    <!--底部部分结束-->
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "深圳医师协会会员登录";
+}
+<div class="Login clearfix">
+    <div class="LoginLeft"></div>
+    <div class="LoginRight">
+        <h3>会员登录<span>MemberLogin</span></h3>
+        <ul>
+
+            <li><label>用户名：</label><input type="text" id="userName" placeholder="请输入用户名"><input type="hidden" id="backUrl" value="@ViewBag.BackUrl" /></li>
+            <li><label>密　码：</label><input type="password" id="pwd" placeholder="请输入密码"></li>
+            <li class="Verify aa"><label>验证码：</label><input type="text" id="verifyCode" placeholder="请输入验证码"><div class="qswe" title="看不清，点击刷新"><img></div></li>
+            <li class="LoginButton"><input type="button" id="login" value="登　　录" title="点击登录"></li>
+            <p>你还没填写用户名，请您填写后再登录！</p>
+            <!--<li class="Register clearfix"><span>您还没成为我们的会员？</span><input type="button" value="新会员注册"></li>-->
+
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("#login").click(function () {
+            $.ajax({
+                type: "post",
+                url: "/Account/Login",
+                dataType: "json",
+                data: { userName: $("#userName").val(), password: $("#pwd").val(), verifyCode: $("#verifyCode").val(), backUrl: $("#backUrl").val() },
+                success: function (data) {
+                    alert(data)
+                }
+            });
+        });
+    })
+</script>

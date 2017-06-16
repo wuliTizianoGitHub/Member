@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+.Members{ width:100%; font-family:"微软雅黑";}
+.MembersCenter{ width:970px; margin:30px auto; overflow:hidden;}
+.MCLeft{ float:left; width:210px; border:1px solid #ccc; min-height:470px; background:#f5f5f5;}
+.MCRight{ float:left; width:741px; border:1px solid #ccc; margin-left:15px;min-height:470px;}
+/*左边样式*/
+.MCTitle{ background:#3f90ea; height:45px; line-height:45px; text-align:center; color:#fff; font-size:18px;}
+.MLList{}
+.MLList ul li{ height:46px; line-height:46px; vertical-align:middle;  border-bottom:1px solid #ccc;}
+.MLList ul li a{ height:46px;text-decoration:none; text-align:center; font-weight:bold; display:block;}
+.MLList ul li:hover{ background:#fcfcfc;}
+.MLList ul li:hover a{ color:#057bff;}
+.MLList ul li img{ vertical-align:middle; margin-top:-4px;}
+.MLList ul li span{ margin-left:10px; font-size:14px;}
+.MListOn{ color:#5d5fbc; background:#fcfcfc;}
+.MListOn a{ color:#057bff;}
+/*右边样式*/
+.ContentTitle{ height:45px; line-height:45px; padding:0 10px; border-bottom:1px solid #ccc;}
+.ContentTitle span{ font-size:16px; background:url(../images/ContentTitle_bg.png) center left no-repeat; padding-left:25px; color:#057bff;}
+/*会员信息*/
+.Message{ font-size:14px; margin:0px 25px;}
+.Message ul li{ height:53px; line-height:53px; border-bottom:1px dashed #ccc; overflow:hidden;}
+.Message ul li label{ display:inline-block; width:90px;}
+.BigBox{}
+.SmallBox{ float:left; width:340px;}
+.Amend{ text-align:center; margin-top:40px; margin-bottom:30px;}
+.Amend input{ height:40px; width:180px; cursor:pointer; color:#fff; font-size:16px; font-family:"微软雅黑"; background:#3f90ea; border:none; border-radius:3px;}
+.Amend input:hover{ background:#67acf8;}
+
+.Message ul li input{ height:30px; width:210px; border:1px solid #999; line-height:30px;text-indent:10px;font-size:14px; font-family:"微软雅黑"; color:#666;}
+.Message ul li select{ width:215px; margin-left:-5px; text-indent:10px; padding:7px 0px;font-size:14px; font-family:"微软雅黑"; color:#666;}
+
+/*修改密码*/
+.Modify{ font-size:14px;}
+.Modify ul{ width:450px; margin:0px auto; margin-top:40px;}
+.Modify ul li{ line-height:40px; margin-top:15px;}
+.Modify ul li span{ float:left; width:100px; text-align:right; height:30px; }
+.Modify ul li input{height:30px; line-height:30px; border:1px solid #ccc;text-indent:10px; width:240px;font-family:"微软雅黑"; font-size:14px;}
